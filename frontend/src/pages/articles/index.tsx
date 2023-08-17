@@ -1,5 +1,5 @@
 import { GetStaticProps, NextPage } from "next";
-// import SortableTable from "../../components/table/SortableTable";
+import SortableTable from "../../components/table/SortableTable";
 // import data from "../../utils/dummydata.json";
 
 interface ArticlesInterface {
@@ -32,7 +32,7 @@ const Articles: NextPage<ArticlesProps> = ({ articles }) => {
     <div className="container">
       <h1>Articles Index Page</h1>
       <p>Page containing a table of articles:</p>
-      {/* <SortableTable headers={headers} data={articles} /> */}
+      <SortableTable headers={headers} data={articles} />
     </div>
   );
 };
