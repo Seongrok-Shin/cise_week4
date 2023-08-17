@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-// import formStyles from "../../../styles/Form.module.scss";
+import formStyles from "../../../styles/Form.module.scss";
 
 const NewDiscussion = () => {
   const [title, setTitle] = useState("");
@@ -48,7 +48,7 @@ const NewDiscussion = () => {
 
   return (
     <div className="container">
-      {/* <h1>New Article</h1>
+      <h1>New Article</h1>
       <form className={formStyles.form} onSubmit={submitNewArticle}>
         <label htmlFor="title">Title:</label>
         <input
@@ -145,7 +145,7 @@ const NewDiscussion = () => {
         <button className={formStyles.formItem} type="submit">
           Submit
         </button>
-      </form> */}
+      </form>
     </div>
   );
 };
